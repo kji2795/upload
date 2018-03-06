@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> <!-- 폰트어웨이섬 코드 -->
+    <script src="js/mobile.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>모바일 사이트</title>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div id="headerIn">
+                <div class="navi"> <!-- 오픈메뉴버튼 -->
+                    <a href="#"><span class="fas fa-bars"></span></a> <!-- 어웨이섬폰트를 넣기위해 스팬을 비워둔다 --> <!--  크기는 폰트사이즈로 -->
+                </div>
+                <h1 class="logo"><a href="#"></a></h1>  <!-- 로고 -->
+                <div class="search">  <!-- 서치 -->
+                    <a href="#"><span class="fas fa-search"></span></a>
+                </div>
+            </div>
+            <nav id="gnb">
+                <ul>
+                    <li><a href="#">Navigation_bar</a>
+                        <ul class="depth2">
+                            <li><a href="#">Submenu_bar1</a></li>
+                            <li><a href="#">Submenu_bar2</a></li>
+                            <li><a href="#">Submenu_bar3</a></li>
+                            <li><a href="#">Submenu_bar4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Navigation_bar</a>
+                        <ul class="depth2">
+                            <li><a href="#">Submenu_bar1</a></li>
+                            <li><a href="#">Submenu_bar2</a></li>
+                            <li><a href="#">Submenu_bar3</a></li>
+                            <li><a href="#">Submenu_bar4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Navigation_bar</a>
+                        <ul class="depth2">
+                            <li><a href="#">Submenu_bar1</a></li>
+                            <li><a href="#">Submenu_bar2</a></li>
+                            <li><a href="#">Submenu_bar3</a></li>
+                            <li><a href="#">Submenu_bar4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Navigation_bar</a>
+                        <ul class="depth2">
+                            <li><a href="#">Submenu_bar1</a></li>
+                            <li><a href="#">Submenu_bar2</a></li>
+                            <li><a href="#">Submenu_bar3</a></li>
+                            <li><a href="#">Submenu_bar4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Navigation_bar</a>
+                        <ul class="depth2">
+                            <li><a href="#">Submenu_bar1</a></li>
+                            <li><a href="#">Submenu_bar2</a></li>
+                            <li><a href="#">Submenu_bar3</a></li>
+                            <li><a href="#">Submenu_bar4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Navigation_bar</a>
+                        <ul class="depth2">
+                            <li><a href="#">Submenu_bar1</a></li>
+                            <li><a href="#">Submenu_bar2</a></li>
+                            <li><a href="#">Submenu_bar3</a></li>
+                            <li><a href="#">Submenu_bar4</a></li>
+                        </ul>
+                    </li>
+                </ul>  <!-- 1단 -->
+            </nav>
+            <div id="SearchBar">
+                <input type="search" name"sch" id="sch" placeholder="Search...">
+            </div>
+        </header>
+        <main>
+            <div id="mainVisual">
+                <a href="#"></a>    
+            </div>
+            <div id="gall1">
+                <ul>
+                    <li><a href="#">
+                        <img src="http://via.placeholder.com/350x150" alt="">
+                        <p class="conts">
+                            <span class="tit">이미지 제목</span>
+                            <span class="exp">이미지에 대한 내용을 설명하는 칸입니다.</span>
+                        </p>
+                        </a>
+                        <p class="btn"><span class="good">♥</span>
+                            <span class="recm" id="clickme">추천:0</span>
+                        </p>
+                    </li><!--  1 -->
+                    <li><a href="#">
+                        <img src="http://via.placeholder.com/350x150" alt="">
+                        <p class="conts">
+                            <span class="tit">이미지 제목</span>
+                            <span class="exp">이미지에 대한 내용을 설명하는 칸입니다.</span>
+                        </p>
+                        </a>
+                        <p class="btn"><span class="good">♥</span>
+                            <span class="recm" id="clickme2">추천:0</span>
+                        </p>
+                    </li><!--  2 -->
+                    <li><a href="#">
+                        <img src="http://via.placeholder.com/350x150" alt="">
+                        <p class="conts">
+                            <span class="tit">이미지 제목</span>
+                            <span class="exp">이미지에 대한 내용을 설명하는 칸입니다.</span>
+                        </p>
+                        </a>
+                        <p class="btn"><span class="good">♥</span>
+                            <span class="recm" id="clickme3">추천:0</span>
+                        </p>
+                    </li><!--  3 -->
+
+                </ul>
+            </div>
+
+            <div id="choice">
+                <select class="selbox" onchange="setSelectText('searchSubCate',this)">
+                    <option value="show1">선택요소1</option>
+                    <option value="show2">선택요소2</option>
+                    <option value="show3">선택요소3</option>
+                    <option value="show4">선택요소4</option>
+                    <option value="show5">선택요소5</option>
+                </select>
+                <div class="showpic">
+                    <div id="show1" class="mm">
+                        <img src="http://via.placeholder.com/350x150" alt="">
+                        <p class="choice_text1">선택메뉴내용1</p>
+                    </div>
+                    <div id="show2" class="mm">
+                        <img src="http://via.placeholder.com/350x150" alt="">
+                        <p class="choice_text1">선택메뉴내용2</p>
+                    </div>
+                    <div id="show3" class="mm">
+                        <img src="http://via.placeholder.com/350x150" alt="">
+                        <p class="choice_text1">선택메뉴내용3</p>
+                    </div>
+                    <div id="show4" class="mm">
+                        <img src="http://via.placeholder.com/350x150" alt="">
+                        <p class="choice_text1">선택메뉴내용4</p>
+                    </div>
+                    <div id="show5" class="mm">
+                        <img src="http://via.placeholder.com/350x150" alt="">
+                        <p class="choice_text1">선택메뉴내용5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sumImg">
+                <div class="sum1">
+                    <img src="http://via.placeholder.com/80x150" alt="">
+                    <p class="exp_1">
+                        <span class="title">
+                        내용 주제글
+                        </span>
+                        <span class="sum1_exp1">
+                        내용 설명글   
+                        </span>
+                    </p>
+                </div>
+                <div class="sum2">
+                    <img src="http://via.placeholder.com/80x150" alt="">
+                    <p class="exp_2">
+                        <span class="title">
+                        내용 주제글
+                        </span>
+                        <span class="sum1_exp2">
+                        내용 설명글   
+                        </span>
+                    </p>
+                </div>
+                <div class="sum3">
+                    <img src="http://via.placeholder.com/80x150" alt="">
+                    <p class="exp_3">
+                        <span class="title">
+                        내용 주제글
+                        </span>
+                        <span class="sum1_exp3">
+                        내용 설명글   
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer>
+           
+               <nav id="fnav">
+                   <ul>
+                       <li><a href="#">ADRESS</a>
+                       <ul class="fdepth2">
+                           <li>
+                            <adress>
+                            울산광역시<br>
+                            남구 삼산동 삼산타워 10층<br>
+                            그린컴퓨터아카데미<br>                         
+                            </adress>
+                           </li>
+                       </ul>
+                      </li>
+                      <li><a href="#">저작권</a>
+                        <ul class="fdepth2">
+                            <li>
+                            <span class="knum">
+                            사업자등록번호: 001-01-00001   
+                            </span>
+                            <span class="cry">
+                            Coparight Greenart 2018. All rights reserved.    
+                            </span>
+                            </li>
+                        </ul>
+                       </li>
+                   </ul>
+                </nav>
+                <div class="flogo">
+                    <a href="#"></a>
+                </div>
+
+          
+        </footer>
+    </div>
+</body>
+<script>
+$(".search>a").click(function(){
+    $("#SearchBar").slideToggle("600","easeOutBounce");
+});
+
+$(".navi>a").click(function(){
+    var poi = $("#gnb").css("display");
+    if(poi == "none"){
+        $("#gnb").show(100).animate({left:"0"});
+    }else if(poi == "block"){
+        $("#gnb").animate({left:"-100%"});
+        $("#gnb").fadeOut(300);
+    }
+});
+
+
+    $("#gnb>ul>li>a").click(function(){
+       var dis = $(this).siblings(".depth2");
+       var two = dis.css("display");
+
+       if(two == "none"){ 
+           $(".depth2").slideUp(); 
+           dis.slideDown(); // dis => display: block;         
+        }else if(two == "block"){
+            dis.slideUp();
+        }
+    });
+
+$(".btn>span.good").click(function(){   /* 좋아요 버튼 */
+    $(this).toggleClass("red");
+
+});
+
+
+var count = 0;
+$("#clickme").click(function(){
+    count += 1;
+    $("#clickme").html("추천: "+count);
+});
+
+var count2 = 0;
+$("#clickme2").click(function(){
+    count2 += 1;
+    $("#clickme2").html("추천:"+count2);
+});
+
+var count3 = 0;
+$("#clickme3").click(function(){
+    count3 += 1;
+    $("#clickme3").html("추천:"+count3);
+});
+
+//선택요소
+
+$(".selbox").change(function(){
+    $(".mm").hide(); // 현재 선택한 옵션 메뉴를 제외하고 다른 나머지 메뉴는 사라진다. 
+    $("#"+$(this).val()).show(); // 내가 선택한 옵션메뉴에 관련되는 value의 값과 일치하는 아이디 명을 가지고 있는 메뉴만 나타내도록 해주는 구성
+});
+
+$("#fnav>ul>li>a").click(function(){
+       var dis = $(this).siblings(".fdepth2");
+       var two = dis.css("display");
+
+       if(two == "none"){ 
+           $(".fdepth2").slideUp(); 
+           dis.slideDown(); // dis => display: block;         
+        }else if(two == "block"){
+            dis.slideUp();
+        }
+        return false;
+    });
+</script>
+</html>

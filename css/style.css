@@ -1,0 +1,327 @@
+@charset "utf-8";
+
+#wrap{
+    width: 100%;    
+}
+
+header, main, footer{
+    position: relative;
+    width: 100%;
+}
+
+#headerIn{
+    width: 100%;
+    height: 80px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.navi, .search{
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.navi{
+    left: 10px;
+}
+
+.search{
+    right: 10px;
+}
+
+.navi>a .search>a{
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.navi span, .search span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    background: #ccc;
+}
+
+.fa-bars, .fa-search{
+    font-size: 30px;
+}
+
+.logo{
+    width: 120px;
+    height: 60px;
+}
+
+.logo>a{
+    display: block;
+    width: 120px;
+    height: 60px;
+    background: #ccc;
+}
+
+#gnb{
+    position: fixed;
+    left: -100%;  /* 네비게이션을 왼쪽으로 숨긴다 */
+    width: 100%;
+    height: 100%;
+    background: beige;
+    display: none;
+    z-index: 99;
+}
+
+#gnb>ul>li>a{
+    position: relative;
+    display: block;
+    font-size: 16px;
+    /* text-indent: 10px; */
+    text-align: center;
+    padding: 10px 0;
+}
+
+#gnb>ul>li>a:after{
+    content:"▼";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: goldenrod;
+}
+
+.depth2 a{
+    display: block;
+    padding: 8px;
+    font-size: 14px;
+    text-indent: 20px;
+}
+
+.depth2{
+    display: none;
+}
+
+#SearchBar{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #ccc;
+    display: none;
+}
+
+#sch{
+    position: relative;
+    display: block;
+    width: 80%;
+    height: 40px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    text-indent: 10px;
+    top: 5px;
+    background: rgba(255,255,255,0.8);
+    color: blue;
+}
+
+/* 메인css */
+
+#mainVisual{
+    width: 100%;
+    height: 300px;
+}
+
+#mainVisual>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("http://via.placeholder.com/1920x1080") no-repeat center / cover;
+}
+
+#gall1{
+    width: 100%;
+    height: auto;
+    margin-top: 20px; 
+}
+
+#gall1 li{
+    width: 90%;
+    height: auto;
+    margin: 0 auto 20px auto;
+}
+
+#gall1 a{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#gall1 img{
+    width: 100%;
+    height: auto;
+}
+
+.tit{
+    font-size: 16px;
+    text-indent: 10px;
+    display: block;
+    padding: 5px 0;
+}
+
+.exp{
+    font-size: 14px;
+    text-indent: 20px;
+    display: block;
+    padding: 5px 0;
+}
+
+.btn{
+    position: relative;
+    margin-left: auto;  /* 오른쪽으로 */
+    width: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn>span{
+    display: block;
+    cursor: pointer;
+}
+
+.good{
+    color: olivedrab;
+}
+
+.good.red{
+    color: red;
+}
+
+ #show2, #show3, #show4, #show5{
+    position: relative;
+    display: none;
+}
+
+#choice, .showpic{
+    width: 90%;
+    height: auto;
+    margin: 20px auto 0 auto;
+}
+
+select{
+    display: block;
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ccc;
+}
+
+.showpic img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#sumImg{
+    width: 90%;
+    height: auto;
+    margin: 40px auto 0 auto;
+}
+
+.sum1, .sum2, .sum3{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom : 30px;
+}
+
+#sumImg img{
+    display: block;
+    width: 30%;
+    height: auto;
+}
+
+#sumImg p{
+    width: 70%;
+    height: auto;
+}
+
+.title{
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    text-indent: 10px;
+}
+
+.sum_exp1, .sum_exp2, .sum_exp3{
+    display: block;
+    font-size: 14px;
+    padding-top: 10px;
+    text-indent: 10px;
+    margin-bottom: 10px;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    background: black;
+}
+
+#fnav>ul>li>a{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px 0;
+    text-indent: 10px;
+}
+
+#fnav>ul>li>a:after{
+    content:"▼";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 10px;
+    top: 60%;
+    transform: translateY(-50%);
+    font-size: 14px;
+}
+
+.fdepth2 adress, .knum, .cry{
+    display: block;
+    width: 200px;
+    font-style: normal;
+    font-size: 14px;
+    color: #fff;
+    padding: 5px 0;
+    margin-left: 20px;
+}
+
+.fdepth2 li{
+    color: rgb(26, 26, 26);
+    padding: 10px 0;
+}
+
+.fdepth2{
+    display: none;
+}
+
+.flogo{
+    width: 100%;
+    height: 50px;
+    background: black;
+}
+
+.flogo>a{
+    display: block;
+    position: relative;
+    width: 80px;
+    height: 40px;
+    background: url("http://via.placeholder.com/80x40") no-repeat;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
