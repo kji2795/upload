@@ -77,8 +77,8 @@ header, main, footer{
     position: relative;
     display: block;
     font-size: 16px;
-    /* text-indent: 10px; */
-    text-align: center;
+    text-indent: 10px;
+    /* text-align: center; */
     padding: 10px 0;
 }
 
@@ -255,7 +255,8 @@ select{
     text-indent: 10px;
 }
 
-.sum_exp1, .sum_exp2, .sum_exp3{
+.sum1_exp1, .sum1_exp2, .sum1_exp3{
+    
     display: block;
     font-size: 14px;
     padding-top: 10px;
@@ -270,6 +271,7 @@ footer{
 }
 
 #fnav>ul>li>a{
+    position: relative;
     display: block;
     font-size: 16px;
     font-weight: 600;
@@ -285,7 +287,7 @@ footer{
     width: 20px;
     height: 20px;
     right: 10px;
-    top: 60%;
+    top: 50%;
     transform: translateY(-50%);
     font-size: 14px;
 }
@@ -324,4 +326,8 @@ footer{
     margin: 0 auto;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.conts{
+    display: none;
 }

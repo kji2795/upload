@@ -232,6 +232,7 @@
 <script>
 $(".search>a").click(function(){
     $("#SearchBar").slideToggle("600","easeOutBounce");
+    return false;
 });
 
 $(".navi>a").click(function(){
@@ -241,7 +242,9 @@ $(".navi>a").click(function(){
     }else if(poi == "block"){
         $("#gnb").animate({left:"-100%"});
         $("#gnb").fadeOut(300);
+        $(".depth2").slideUp();
     }
+    return false;
 });
 
 
@@ -255,10 +258,12 @@ $(".navi>a").click(function(){
         }else if(two == "block"){
             dis.slideUp();
         }
+        return false;
     });
 
 $(".btn>span.good").click(function(){   /* 좋아요 버튼 */
     $(this).toggleClass("red");
+    return false;
 
 });
 
@@ -267,18 +272,21 @@ var count = 0;
 $("#clickme").click(function(){
     count += 1;
     $("#clickme").html("추천: "+count);
+    return false;
 });
 
 var count2 = 0;
 $("#clickme2").click(function(){
     count2 += 1;
     $("#clickme2").html("추천:"+count2);
+    return false;
 });
 
 var count3 = 0;
 $("#clickme3").click(function(){
     count3 += 1;
     $("#clickme3").html("추천:"+count3);
+    return false;
 });
 
 //선택요소
@@ -300,5 +308,10 @@ $("#fnav>ul>li>a").click(function(){
         }
         return false;
     });
+
+$("#gall1 a").click(function(){
+    $(this).find(".conts").slideToggle(); // find란 ? 선택자의 자식을 찾는다.
+    return false;
+});
 </script>
 </html>
