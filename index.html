@@ -9,6 +9,7 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> <!-- 폰트어웨이섬 코드 -->
     <script src="js/mobile.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
     <title>모바일 사이트</title>
@@ -18,16 +19,24 @@
         <header>
             <div id="headerIn">
                 <div class="navi"> <!-- 오픈메뉴버튼 -->
-                    <a href="#"><span class="fas fa-bars"></span></a> <!-- 어웨이섬폰트를 넣기위해 스팬을 비워둔다 --> <!--  크기는 폰트사이즈로 -->
+                    <a href="#"><span class="fa-bars"><img src="images/list-menu.png" alt=""></span></a> <!-- 어웨이섬폰트를 넣기위해 스팬을 비워둔다 --> <!--  크기는 폰트사이즈로 -->
                 </div>
-                <h1 class="logo"><a href="#"></a></h1>  <!-- 로고 -->
+                <h1 class="logo"><a href="#"><img src="images/logo.png" alt=""></a></h1>  <!-- 로고 -->
                 <div class="search">  <!-- 서치 -->
-                    <a href="#"><span class="fas fa-search"></span></a>
+                    <a href="#"><span class="fa-search"><img src="images/search.png" alt=""></span></a>
                 </div>
             </div>
             <nav id="gnb">
                 <ul>
-                    <li><a href="#">Navigation_bar</a>
+                    <li><a href="#">ARTIST</a>
+                        <ul class="depth2">
+                            <li><a href="#">FESIT</a></li>
+                            <li><a href="#">BON IVER</a></li>
+                            <li><a href="#">FLEET FOXES</a></li>
+                            <li><a href="#">... more</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">NEWS</a>
                         <ul class="depth2">
                             <li><a href="#">Submenu_bar1</a></li>
                             <li><a href="#">Submenu_bar2</a></li>
@@ -35,7 +44,7 @@
                             <li><a href="#">Submenu_bar4</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Navigation_bar</a>
+                    <li><a href="#">TOUR</a>
                         <ul class="depth2">
                             <li><a href="#">Submenu_bar1</a></li>
                             <li><a href="#">Submenu_bar2</a></li>
@@ -43,7 +52,7 @@
                             <li><a href="#">Submenu_bar4</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Navigation_bar</a>
+                    <li><a href="#">STORE</a>
                         <ul class="depth2">
                             <li><a href="#">Submenu_bar1</a></li>
                             <li><a href="#">Submenu_bar2</a></li>
@@ -51,7 +60,7 @@
                             <li><a href="#">Submenu_bar4</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Navigation_bar</a>
+                    <li><a href="#">VIDEOS</a>
                         <ul class="depth2">
                             <li><a href="#">Submenu_bar1</a></li>
                             <li><a href="#">Submenu_bar2</a></li>
@@ -59,15 +68,7 @@
                             <li><a href="#">Submenu_bar4</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Navigation_bar</a>
-                        <ul class="depth2">
-                            <li><a href="#">Submenu_bar1</a></li>
-                            <li><a href="#">Submenu_bar2</a></li>
-                            <li><a href="#">Submenu_bar3</a></li>
-                            <li><a href="#">Submenu_bar4</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Navigation_bar</a>
+                    <li><a href="#">INFO</a>
                         <ul class="depth2">
                             <li><a href="#">Submenu_bar1</a></li>
                             <li><a href="#">Submenu_bar2</a></li>
@@ -82,13 +83,14 @@
             </div>
         </header>
         <main>
-            <div id="mainVisual">
+    <!--         <div id="mainVisual">
                 <a href="#"></a>    
-            </div>
+            </div> -->
             <div id="gall1">
+                <h1 class="artist"><img src="images/artist.png" alt=""></h1>
                 <ul>
                     <li><a href="#">
-                        <img src="http://via.placeholder.com/350x150" alt="">
+                        <img src="images/bom.jpg" alt="">
                         <p class="conts">
                             <span class="tit">이미지 제목</span>
                             <span class="exp">이미지에 대한 내용을 설명하는 칸입니다.</span>
@@ -99,7 +101,7 @@
                         </p>
                     </li><!--  1 -->
                     <li><a href="#">
-                        <img src="http://via.placeholder.com/350x150" alt="">
+                        <img src="images/iver.jpg" alt="">
                         <p class="conts">
                             <span class="tit">이미지 제목</span>
                             <span class="exp">이미지에 대한 내용을 설명하는 칸입니다.</span>
@@ -110,7 +112,7 @@
                         </p>
                     </li><!--  2 -->
                     <li><a href="#">
-                        <img src="http://via.placeholder.com/350x150" alt="">
+                        <img src="images/rhcp.jpg" alt="">
                         <p class="conts">
                             <span class="tit">이미지 제목</span>
                             <span class="exp">이미지에 대한 내용을 설명하는 칸입니다.</span>
