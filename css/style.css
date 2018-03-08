@@ -293,16 +293,12 @@ select{
     border: 1px solid #000;
 }
 
-.s_img{
+#sumImg img{
     display: block;
     width: 40%;
     height: auto;
 }
 
-.s_img>img{
-    width: 150px;
-    height: 150px;
-}
 
 #sumImg p{
     width: 60%;
@@ -327,6 +323,7 @@ select{
     position: relative;
     top: 6px;
     width: 100%;
+    height: auto;
     border: 1px solid blue;
 }
 
