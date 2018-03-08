@@ -343,6 +343,7 @@ select{
     display: block;
     width: 100%;
     height: auto;
+    line-height: 1.4;
     border: 1px solid yellow;
 }
 
