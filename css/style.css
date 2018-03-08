@@ -311,7 +311,7 @@ select{
     text-indent: 12px;
     position: relative;
     top: 5px;
-    /* border: 1px solid hotpink; */
+    border: 1px solid hotpink;
 }
 
 .sum1_exp1, .sum1_exp2, .sum1_exp3{
@@ -323,7 +323,7 @@ select{
     position: relative;
     left: 12px;
     top: 6px;
-    width: 94%;
+    width: 100%;
     /* border: 1px solid blue; */
 }
 
@@ -331,7 +331,7 @@ select{
     display: block;
     width: 30px;
     height: 20px;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     position: relative;
     margin-left: auto;
     font-family: 'Oswald', sans-serif;
