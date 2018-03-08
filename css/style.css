@@ -293,10 +293,15 @@ select{
     border: 1px solid #000;
 }
 
-#sumImg img{
+.s_img{
     display: block;
     width: 40%;
     height: auto;
+}
+
+.s_img>img{
+    width: 200px;
+    height: 200px;
 }
 
 #sumImg p{
