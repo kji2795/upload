@@ -308,31 +308,31 @@ select{
     display: block;
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
-    text-indent: 12px;
+    text-indent: 8px;
     position: relative;
-    top: 5px;
+    top: -8px;
     border: 1px solid hotpink;
 }
 
-.sum1_exp1, .sum1_exp2, .sum1_exp3{
-    
+.exp{
     display: block;
     font-size: 12px;
     padding-top: 10px;
     margin-bottom: 10px;
     position: relative;
-    left: 12px;
     top: 6px;
     width: 100%;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
 }
 
-.exp_1 a, .exp_2 a, .exp_3 a{
+.exp a{
     display: block;
     width: 30px;
     height: 20px;
     border: 1px solid red;
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    right: 0;
     margin-left: auto;
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
