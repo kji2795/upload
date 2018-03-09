@@ -296,7 +296,7 @@ select{
 #sumImg img{
     display: block;
     width: 40%;
-    height: auto;
+    height: 150px;
 }
 
 
@@ -347,6 +347,7 @@ select{
     height: auto;
     line-height: 1.4;
     position: relative;
+    font-size: 14px;
     left: 7px;
     /* border: 1px solid yellow; */
 }
