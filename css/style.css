@@ -352,7 +352,7 @@ select{
     left: 7px;
 }
 
-footer{
+/* footer{
     width: 100%;
     height: auto;
     background: black;
@@ -378,7 +378,7 @@ footer{
     top: 50%;
     transform: translateY(-50%);
     font-size: 14px;
-}
+} */
 
 .fdepth2 adress, .knum, .cry{
     display: block;
