@@ -347,10 +347,10 @@ select{
     height: auto;
     line-height: 1.1;
     position: relative;
-    font-size: 14px;
+    /* font-size: 12px; */
     letter-spacing: -1px;
     left: 7px;
-    /* border: 1px solid yellow; */
+    border: 1px solid yellow;
 }
 
 footer{
