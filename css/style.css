@@ -302,7 +302,7 @@ select{
 
 #sumImg p{
     width: 60%;
-    height: 150px;
+    height: auto;
 }
 
 .title{
@@ -312,10 +312,10 @@ select{
     text-indent: 8px;
     position: relative;
     top: -8px;
-    border: 1px solid hotpink;
+    /* border: 1px solid hotpink; */
 }
 
-.exp{
+.exp1{
     display: block;
     font-size: 12px;
     padding-top: 10px;
@@ -324,14 +324,14 @@ select{
     top: 6px;
     width: 100%;
     height: auto;
-    border: 1px solid blue;
+    
 }
 
-.exp a{
+.exp1 a{
     display: block;
     width: 30px;
     height: 20px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: absolute;
     bottom: 0;
     right: 0;
@@ -343,10 +343,12 @@ select{
 
 .sumspan{
     display: block;
-    width: 100%;
+    width: 90%;
     height: auto;
     line-height: 1.4;
-    border: 1px solid yellow;
+    position: relative;
+    left: 7px;
+    /* border: 1px solid yellow; */
 }
 
 footer{
