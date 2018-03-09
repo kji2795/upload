@@ -17,19 +17,19 @@ header, main, footer{
 }
 
 #headerIn{
-    width: 100%;
+    width: 100%; 
     height: auto;
     position: relative;
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
 }
 
 .comeback1{
+   width: 100%;
+   height: 36px;
    position: absolute;
    top: 38%;
-   left: 50%;
-   transform: translateX(-50%);
+   text-align: center;
    font-family: 'Arial', sans-serif;
    color: #fff;
    font-size: 34px;
@@ -37,12 +37,11 @@ header, main, footer{
 }
 
 .comeback2{
-    width: 326px;
+    width: 100%;
     height: 40px;
     position: absolute;
     top: 45%;
-    left: 50%;
-    transform: translateX(-50%);
+    text-align: center;
     font-size: 38px;
     color: #faf7c7;
     font-family: 'Archivo Black', sans-serif;
@@ -55,7 +54,6 @@ header, main, footer{
     transform: translateX(-50%);
     width: 200px;
     height: 40px;
-    /* border: 2px solid red; */
     display: flex;
     justify-content: space-between;
 }
@@ -65,7 +63,7 @@ header, main, footer{
     width: 90px;
     height: 36px;
     border: 2px solid #fff;
-    text-align: center;    
+    text-align: center;   
 }
 
 .enter1, .enter2{
@@ -151,24 +149,12 @@ header, main, footer{
     font-size: 18px;
     color: black;
     text-align: center;
-    padding: 22px 0;
+    padding: 24px 0;
 }
 
 #gnb>ul>li>a:hover{
     color: goldenrod;
 }
-
-/* #gnb>ul>li>a:after{
-    content:"▼";
-    display: block;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 45%;
-    transform: translateY(-50%);
-    right: 10px;
-    color: goldenrod;
-} */
 
 .depth2 a{
     display: block;
@@ -192,36 +178,24 @@ header, main, footer{
     top: 60px;
     width: 100%;
     height: 50px;
-    background: #f0f0f0;
+    
     display: none;
 }
 
 #sch{
     position: relative;
     display: block;
-    width: 80%;
+    width: 90%;
     height: 40px;
     margin: 0 auto;
     border: 1px solid #ccc;
     text-indent: 10px;
     top: 5px;
-    background: rgba(255,255,255,0.8);
-    color: #ccc;
+    opacity: 0.4;
+    color: black;
 }
 
 /* 메인css */
-
-/* #mainVisual{
-    width: 100%;
-    height: 300px;
-}
-
-#mainVisual>a{
-    display: block;
-    width: 100%;
-    height: 100%;
-    
-} */
 
 .artist{
     width: 80px;
@@ -268,10 +242,8 @@ header, main, footer{
 
 .exp{
     width: 94%;
-    border: 1px solid #545454;
     margin: 0 auto;
     font-size: 13px;
-    /* text-indent: 20px; */
     display: block;
     padding: 5px 5px;
     position: relative;
@@ -389,7 +361,6 @@ select{
     text-indent: 8px;
     position: relative;
     top: -8px;
-    /* border: 1px solid hotpink; */
 }
 
 .exp1{
@@ -408,7 +379,6 @@ select{
     display: block;
     width: 30px;
     height: 20px;
-    /* border: 1px solid red; */
     position: absolute;
     bottom: 0;
     right: 0;
@@ -449,18 +419,6 @@ footer{
     padding: 8px 0;
     text-align: center;
 }
-
-/* #fnav>ul>li>a:after{
-    content:"▼";
-    display: block;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 14px;
-} */
 
 .fdepth2 adress, .knum, .cry{
     display: block;
